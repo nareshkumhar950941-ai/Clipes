@@ -15,7 +15,7 @@ from pyrogram.types import (
 # Configuration - Credentials provided by user
 API_ID = int(os.getenv("API_ID", "31266551"))
 API_HASH = os.getenv("API_HASH", "f2ebfd089cc0958fbedad2088fdc917b")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8780259250:AAHecgwTyyywEhlTgKdji1H2uiIcbto--kU")
 
 CLIP_DURATION = 58  # 58 seconds per clip
 
