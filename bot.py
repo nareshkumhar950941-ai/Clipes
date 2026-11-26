@@ -18,6 +18,11 @@ API_HASH = os.getenv("API_HASH", "f2ebfd089cc0958fbedad2088fdc917b")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8780259250:AAHecgwTyyywEhlTgKdji1H2uiIcbto--kU")
 
 CLIP_DURATION = 58  # 58 seconds per clip
+try:
+  loop = asyncio.get_event_loop()
+except RuntimeError:
+  loop = asyncio.new_event_loop()
+  asyncio.set_event_loop(loop)
 
 app = Client(
     "clips_cutter_bot",
